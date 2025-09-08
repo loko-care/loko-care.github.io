@@ -7,17 +7,29 @@ const ContactPage: React.FC = () => {
     <div className="font-inter text-loko-ink leading-relaxed min-h-screen flex flex-col">
       <Header currentPage="contact" />
 
-      <main className="flex-grow bg-gradient-to-br from-loko-beige to-white">
+      <main className="flex-grow">
         {/* Hero Section */}
-        <section className="pt-32 pb-20">
+        <section className="relative h-screen min-h-[600px]">
+          <div className="absolute inset-0">
+            <img 
+              src="/photos/photo4.jpg" 
+              alt="Get in touch with Loko healthcare team" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-black/20 flex items-center justify-center pt-32">
+            <div className="max-w-4xl mx-auto px-6">
+              <div className="text-white text-center">
+                <h1 className="text-6xl font-bold leading-tight mb-6">Contact Us</h1>
+                <p className="text-lg mb-8 opacity-90">Got an inquiry or two? Drop us a hello and we'll get back to you as soon as we can!</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Information Section */}
+        <section className="py-20 bg-gradient-to-br from-loko-beige to-white">
           <div className="max-w-4xl mx-auto px-6 text-center">
-            <h1 className="text-5xl font-bold text-loko-green leading-tight mb-6">
-              Contact Us
-            </h1>
-            <p className="text-xl text-loko-muted mb-12 leading-relaxed">
-              Got an inquiry or two? Drop us a hello and we'll get back to you as soon as we can!
-            </p>
-            
             {/* Contact Information */}
             <div className="max-w-2xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

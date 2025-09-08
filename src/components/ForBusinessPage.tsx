@@ -27,20 +27,28 @@ const ForBusinessPage: React.FC = () => {
     <div className="font-inter text-loko-ink leading-relaxed min-h-screen flex flex-col">
       <Header currentPage="for-business" />
 
-      <main className="flex-grow bg-gradient-to-br from-loko-beige to-white">
+      <main className="flex-grow">
         {/* Hero Section */}
-        <section className="pt-32 pb-20">
-          <div className="max-w-6xl mx-auto px-6 text-center">
-            <h1 className="text-5xl font-bold text-loko-green leading-tight mb-6">
-              Looking for a care provider for underserved labor groups?
-            </h1>
-            <p className="text-xl text-loko-muted mb-8 leading-relaxed">
-              Give your workers care at their door.
-            </p>
-            <div className="flex justify-center">
-              <a href="/contact" className="bg-loko-green text-white px-8 py-4 rounded-lg font-semibold hover:-translate-y-0.5 hover:shadow-xl transition-all inline-block">
-                Contact Us
-              </a>
+        <section className="relative h-screen min-h-[600px]">
+          <div className="absolute inset-0">
+            <img 
+              src="/photos/photo5.jpg" 
+              alt="Healthcare solutions for businesses and labor groups" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-black/20 flex items-center justify-center pt-32">
+            <div className="max-w-6xl mx-auto px-6">
+              <div className="text-white text-center">
+                <h1 className="text-6xl font-bold leading-tight mb-6">Looking for a care provider for underserved labor groups?</h1>
+                <p className="text-lg mb-8 opacity-90">Give your workers care at their door.</p>
+                <a 
+                  href="/contact" 
+                  className="inline-block bg-loko-green text-white px-8 py-4 rounded-lg font-semibold text-lg hover:-translate-y-0.5 hover:shadow-xl transition-all duration-200"
+                >
+                  Contact Us
+                </a>
+              </div>
             </div>
           </div>
         </section>
