@@ -9,14 +9,27 @@ const OurNetworkPage: React.FC = () => {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="pt-32 pb-24 bg-gradient-to-br from-loko-beige to-loko-beige/50">
-          <div className="max-w-6xl mx-auto px-6 text-center">
-            <h1 className="text-5xl font-bold text-loko-green leading-tight mb-6">
-              People on the Value Chain
-            </h1>
-            <p className="text-xl text-loko-muted mb-8 leading-relaxed max-w-3xl mx-auto">
-              We integrate Community Health Workers, clinicians, pharmacies, and delivery partners into one seamless journey
-            </p>
+        <section className="relative h-screen min-h-[600px]">
+          <div className="absolute inset-0">
+            <img 
+              src="/photos/photo3.jpg" 
+              alt="Healthcare network connecting patients with quality care" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-black/20 flex items-center justify-center pt-32">
+            <div className="max-w-6xl mx-auto px-6">
+              <div className="text-white text-center">
+                <h1 className="text-6xl font-bold leading-tight mb-6">People on the Value Chain</h1>
+                <p className="text-lg mb-8 opacity-90 max-w-3xl mx-auto">We integrate Community Health Workers, clinicians, pharmacies, and delivery partners into one seamless journey</p>
+                <a 
+                  href="/contact" 
+                  className="inline-block bg-loko-green text-white px-8 py-4 rounded-lg font-semibold text-lg hover:-translate-y-0.5 hover:shadow-xl transition-all duration-200"
+                >
+                  Join Our Network
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 

@@ -75,8 +75,16 @@ const HomePage: React.FC = () => {
         <section className="py-16 bg-loko-beige">
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
-              {/* Circular Ecosystem Diagram - Left Side */}
-              <div className="relative max-w-lg mx-auto lg:mx-0 lg:col-span-2">
+              {/* Text Content - First on mobile, Right side on desktop */}
+              <div className="text-center lg:text-left lg:col-span-3 lg:order-2">
+                <h2 className="text-4xl font-bold text-loko-green mb-6">Our role in the care journey</h2>
+                <p className="text-xl text-loko-muted">
+                  We connect every part of the healthcare journey into one ecosystem — from patients to Community Health Workers (CHWs), pharmacies, and delivery partners — ensuring care that is approachable, appropriate, and affordable.
+                </p>
+              </div>
+              
+              {/* Circular Ecosystem Diagram - Second on mobile, Left side on desktop */}
+              <div className="relative max-w-lg mx-auto lg:mx-0 lg:col-span-2 lg:order-1">
               <svg viewBox="0 0 400 400" className="w-full h-auto">
                 {/* Circular arrows with different colors - rotated counterclockwise */}
                   {/* Top to right arc */}
@@ -161,14 +169,6 @@ const HomePage: React.FC = () => {
                   <h3 className="text-sm font-semibold" style={{ color: '#22c55e' }}>Delivery</h3>
                 </div>
               </div>
-              </div>
-              
-              {/* Text Content - Right Side */}
-              <div className="text-left lg:col-span-3">
-                <h2 className="text-4xl font-bold text-loko-green mb-6">Our role in the care journey</h2>
-                <p className="text-xl text-loko-muted">
-                  We connect every part of the healthcare journey into one ecosystem — from patients to Community Health Workers (CHWs), pharmacies, and delivery partners — ensuring care that is approachable, appropriate, and affordable.
-                </p>
               </div>
             </div>
           </div>
