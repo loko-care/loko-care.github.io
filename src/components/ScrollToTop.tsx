@@ -5,7 +5,14 @@ const ScrollToTop: React.FC = () => {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Use setTimeout to ensure DOM is ready
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'instant'
+      });
+    }, 0);
   }, [location]);
 
   return null;

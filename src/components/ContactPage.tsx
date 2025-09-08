@@ -3,12 +3,12 @@ import Header from './Header';
 
 const ContactPage: React.FC = () => {
   return (
-    <div className="font-inter bg-white text-loko-ink leading-relaxed min-h-screen flex flex-col">
+    <div className="font-inter text-loko-ink leading-relaxed min-h-screen flex flex-col">
       <Header currentPage="contact" />
 
-      <main className="flex-grow">
+      <main className="flex-grow bg-gradient-to-br from-loko-beige to-white">
         {/* Hero Section */}
-        <section className="pt-32 pb-20 bg-gradient-to-br from-loko-beige to-white">
+        <section className="pt-32 pb-20">
           <div className="max-w-4xl mx-auto px-6 text-center">
             <h1 className="text-5xl font-bold text-loko-green leading-tight mb-6">
               Contact Us

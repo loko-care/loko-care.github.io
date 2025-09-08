@@ -23,12 +23,12 @@ const ForBusinessPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="font-inter bg-white text-loko-ink leading-relaxed min-h-screen flex flex-col">
+    <div className="font-inter text-loko-ink leading-relaxed min-h-screen flex flex-col">
       <Header currentPage="for-business" />
 
-      <main className="flex-grow">
+      <main className="flex-grow bg-gradient-to-br from-loko-beige to-white">
         {/* Hero Section */}
-        <section className="pt-32 pb-20 bg-gradient-to-br from-loko-beige to-white">
+        <section className="pt-32 pb-20">
           <div className="max-w-6xl mx-auto px-6 text-center">
             <h1 className="text-5xl font-bold text-loko-green leading-tight mb-6">
               Looking for a care provider for underserved labor groups?
