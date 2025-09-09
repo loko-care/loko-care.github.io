@@ -47,7 +47,7 @@ const OurNetworkPage: React.FC = () => {
               <div>
                 <h2 className="text-4xl font-bold text-loko-green mb-6">Community Health Workers</h2>
                 <p className="text-xl text-loko-muted leading-relaxed mb-8">
-                  Our Community Health Workers (CHWs) are the backbone of our network. They come from the communities they serve, understanding local customs, languages, and challenges firsthand.
+                  Health workers who guide and accompany patients every step of the way, bringing care that respects local culture and context so it never feels intrusive or disruptive.
                 </p>
               </div>
             </div>
@@ -57,7 +57,7 @@ const OurNetworkPage: React.FC = () => {
               <div className="order-2 lg:order-1">
                 <h2 className="text-4xl font-bold text-loko-green mb-6">Clinicians</h2>
                 <p className="text-xl text-loko-muted leading-relaxed mb-8">
-                  Our network includes licensed healthcare professionals who provide remote consultations, diagnoses, and treatment plans through our telehealth platform.
+                  Compassionate doctors who heal through remote care and guidance.
                 </p>
               </div>
               <div className="order-1 lg:order-2">
@@ -81,7 +81,7 @@ const OurNetworkPage: React.FC = () => {
               <div>
                 <h2 className="text-4xl font-bold text-loko-green mb-6">Pharmacy Partners</h2>
                 <p className="text-xl text-loko-muted leading-relaxed mb-8">
-                  Our trusted pharmacy partners ensure medication availability and quality, working closely with our network to provide safe, effective treatments for our patients.
+                  Local pharmacies who ensure safe and reliable medicines.
                 </p>
               </div>
             </div>
@@ -91,7 +91,7 @@ const OurNetworkPage: React.FC = () => {
               <div className="order-2 lg:order-1">
                 <h2 className="text-4xl font-bold text-loko-green mb-6">Delivery Partners</h2>
                 <p className="text-xl text-loko-muted leading-relaxed mb-8">
-                  Our reliable delivery partners ensure that prescribed medications reach patients safely, affordably, and on time, completing the care journey to their doorstep.
+                  Delivery teams who bring medicines straight to the doorstep.
                 </p>
               </div>
               <div className="order-1 lg:order-2">
