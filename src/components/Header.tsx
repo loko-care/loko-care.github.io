@@ -28,6 +28,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage = 'home' }) => {
   const getCurrentPage = () => {
     if (currentPage !== 'home') return currentPage;
     const path = location.pathname;
+    if (path.includes('our-work')) return 'our-work';
     if (path.includes('for-business')) return 'for-business';
     if (path.includes('our-network')) return 'our-network';
     if (path.includes('contact')) return 'contact';
@@ -62,6 +63,16 @@ const Header: React.FC<HeaderProps> = ({ currentPage = 'home' }) => {
               } hover:text-loko-green`}
             >
               Home
+            </button>
+            <button
+              onClick={() => navigateTo('our-work')}
+              className={`${
+                activePage === 'our-work' 
+                  ? 'text-loko-green font-bold' 
+                  : 'text-loko-muted font-medium'
+              } hover:text-loko-green`}
+            >
+              Our Work
             </button>
             <button
               onClick={() => navigateTo('for-business')}
@@ -128,6 +139,16 @@ const Header: React.FC<HeaderProps> = ({ currentPage = 'home' }) => {
                 } hover:text-loko-green text-left`}
               >
                 Home
+              </button>
+              <button
+                onClick={() => navigateTo('our-work')}
+                className={`${
+                  activePage === 'our-work' 
+                    ? 'text-loko-green font-bold' 
+                    : 'text-loko-muted font-medium'
+                } hover:text-loko-green text-left`}
+              >
+                Our Work
               </button>
               <button
                 onClick={() => navigateTo('for-business')}

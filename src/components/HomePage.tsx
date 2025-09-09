@@ -36,7 +36,7 @@ const HomePage: React.FC = () => {
         </section>
 
         {/* Human Insight & Technology */}
-        <section className="py-20">
+        <section className="py-20 bg-white">
           <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-loko-green mb-6">Our approach</h2>
             <p className="text-xl text-loko-muted mb-16 max-w-4xl mx-auto">
@@ -72,7 +72,7 @@ const HomePage: React.FC = () => {
         </section>
 
         {/* Our Role in the Care Journey - Ecosystem */}
-        <section className="py-16 bg-loko-beige">
+        <section className="py-20 bg-loko-beige">
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
               {/* Text Content - First on mobile, Right side on desktop */}
@@ -174,8 +174,32 @@ const HomePage: React.FC = () => {
           </div>
         </section>
 
+        {/* Indonesia's Underserved Communities */}
+        <section className="py-20 bg-white">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              {/* Text Content */}
+              <div className="text-center lg:text-left">
+                <h2 className="text-4xl font-bold text-loko-green mb-6">We aim to reach Indonesia's underserved communities</h2>
+                <p className="text-xl text-loko-muted leading-relaxed">
+                  From landfill workers, street vendors, to Indigenous groups—many remain underserved.
+                </p>
+              </div>
+              
+              {/* Indonesian Map */}
+              <div className="flex justify-center">
+                <img 
+                  src="/id.svg" 
+                  alt="Map of Indonesia showing underserved communities across the archipelago" 
+                  className="w-full max-w-lg h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Take Action Now - CTA */}
-        <section className="py-20">
+        <section className="py-20 bg-loko-beige">
           <div className="max-w-4xl mx-auto px-6 text-center">
             <h2 className="text-4xl font-bold text-loko-green mb-6">Take action now</h2>
             <p className="text-xl text-loko-muted mb-8">
