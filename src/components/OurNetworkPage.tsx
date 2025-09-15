@@ -20,7 +20,7 @@ const OurNetworkPage: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-black/20 flex items-center justify-center pt-32">
             <div className="max-w-6xl mx-auto px-6">
               <div className="text-white text-center">
-                <h1 className="text-6xl font-bold leading-tight mb-6">People on the Value Chain</h1>
+                <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">People on the Value Chain</h1>
                 <p className="text-lg mb-8 opacity-90 max-w-3xl mx-auto">We integrate Community Health Workers, clinicians, pharmacies, and delivery partners into one seamless journey</p>
                 <a 
                   href="/contact" 
