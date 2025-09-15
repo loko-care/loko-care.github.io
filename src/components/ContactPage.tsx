@@ -20,7 +20,7 @@ const ContactPage: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-black/20 flex items-center justify-center pt-32">
             <div className="max-w-4xl mx-auto px-6">
               <div className="text-white text-center">
-                <h1 className="text-6xl font-bold leading-tight mb-6">Contact Us</h1>
+                <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">Contact Us</h1>
                 <p className="text-lg mb-8 opacity-90">Got an inquiry or two? Drop us a hello and we'll get back to you as soon as we can!</p>
               </div>
             </div>
